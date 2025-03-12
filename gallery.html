@@ -3,8 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery </title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gallery</title>
+    <style>
+        /* styles.css (terintegrasi langsung di dalam file HTML) */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6d4343;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px 0;
+        }
+
+        header ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            color: rgb(199, 109, 109);
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .imgBox {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .imgBox img {
+            max-width: 45%;  /* Reducing max width of the images to 45% */
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .imgBox img:hover {
+            transform: scale(1.05); /* Membuat gambar sedikit membesar saat hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive for smaller screen sizes */
+        @media (max-width: 768px) {
+            .imgBox img {
+                max-width: 100%;  /* Make the images full width on smaller screens */
+            }
+
+            header ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <section>
@@ -18,19 +101,19 @@
                 </ul>
             </header>
             <div class="content">
-                <h2>Mari lihat foto-foto saya </h2>
+                <h2>Mari lihat foto-foto saya</h2>
             </div>
             <div class="imgBox">
-                <img src="foto/1.jpg" alt="">
-                <img src="foto/2.jpg" alt="">
-                <img src="foto/3.jpg" alt="">
-                <img src="foto/4.jpg" alt="">
+                <img src="1.jpg" alt="">
+                <img src="2.jpg" alt="">
+                <img src="3.jpg" alt="">
+                <img src="4.jpg" alt="">
             </div>
             <div class="notes"></div>
         </div>
     </section>
     <footer>
-        <p>© 2024 My Blog. All rights reserved.</p>
+        <p>© 2025 My Blog. All rights reserved.</p>
     </footer>
 </body>
 </html>
