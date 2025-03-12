@@ -4,34 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - Juan</title>
-    
+    <style>
+        /* Reset margin dan padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #502f2f; /* Warna coklat gelap */
+            color: #f77d7d; /* Warna teks abu muda */
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #2e1616; /* Warna beige terang */
+            padding: 10px 0;
+        }
+
+        header ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header ul li a {
+            color: rgb(59, 39, 39); /* Warna putih sedikit krem */
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        header ul li a:hover {
+            color: #e2d1d2; /* Warna lebih terang saat hover */
+        }
+
+        .active {
+            color: #6d3c43; /* Menandakan halaman aktif dengan warna merah muda */
+            font-weight: bold;
+        }
+
+        /* Content Section */
+        .content {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #f7f3f3; /* Warna teks judul */
+        }
+
+        /* Article Section */
+        .article {
+            background-color: #f7eded; /* Warna merah agak pucat */
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .article h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #8d595c; /* Warna teks judul artikel */
+        }
+
+        .article p {
+            font-size: 18px;
+            color: #4d2727; /* Warna teks artikel lebih gelap */
+        }
+
+        .article a {
+            color: #a84654; /* Warna link lebih terang */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .article a:hover {
+            color: #d8677f; /* Warna link saat hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333; /* Warna footer gelap */
+            color: rgb(124, 71, 71); /* Warna teks footer lebih terang */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .content h2 {
+                font-size: 24px;
+            }
+
+            .article h2 {
+                font-size: 20px;
+            }
+
+            .article p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <ul>
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </header>
+
     <div class="content">
         <h2>Berita Terkini !!!</h2>
     </div>
+
     <section class="article">
         <h2>1. Jadwal Timnas Indonesia di Kualifikasi Piala Dunia 2026 Berikutnya</h2>
-        <p> Jakarta - Timnas Indonesia masih menyisakan dua pertandingan di Kualifikasi Piala Dunia 2026. Berikut jadwal bertanding skuad Garuda melawan Irak dan Filipina.....<a href="https://sport.detik.com/sepakbola/liga-indonesia/d-7264838/jadwal-timnas-indonesia-di-kualifikasi-piala-dunia-2026-berikutnya">Baca Berita</a></p>
+        <p>Jakarta - Timnas Indonesia masih menyisakan dua pertandingan di Kualifikasi Piala Dunia 2026. Berikut jadwal bertanding skuad Garuda melawan Irak dan Filipina..... 
+            <a href="https://sport.detik.com/sepakbola/liga-indonesia/d-7264838/jadwal-timnas-indonesia-di-kualifikasi-piala-dunia-2026-berikutnya" target="_blank">Baca Berita</a>
+        </p>
     </section>
+
     <section class="article">
         <h2>2. Ganjar Tolak Jadi Menteri Prabowo, Gibran: Yang Nawari Siapa?</h2>
-        <p>Capres nomor urut 3 Ganjar Pranowo menolak mengisi jabatan menteri era presiden dan wakil presiden terpilih Prabowo Subianto-Gibran Rakabuming Raka. Gibran Rakabuming malah bertanya-tanya siapa yang menawari Ganjar Pranowo........ <a href="https://news.detik.com/pemilu/d-7264828/ganjar-tolak-jadi-menteri-prabowo-gibran-yang-nawari-siapa?mtype=mpt.ctr-boxccxmpcxmp-modelA">Baca Berita</a></p>
+        <p>Capres nomor urut 3 Ganjar Pranowo menolak mengisi jabatan menteri era presiden dan wakil presiden terpilih Prabowo Subianto-Gibran Rakabuming Raka. Gibran Rakabuming malah bertanya-tanya siapa yang menawari Ganjar Pranowo........ 
+            <a href="https://news.detik.com/pemilu/d-7264828/ganjar-tolak-jadi-menteri-prabowo-gibran-yang-nawari-siapa?mtype=mpt.ctr-boxccxmpcxmp-modelA" target="_blank">Baca Berita</a>
+        </p>
     </section>
+
     <section class="article">
-        <h2>3. Transaksi Makin Mudah dan Lancar, BRI Ajak UMKM Manfaatkan QRIS </h2>
-        <p>Peran UMKM dalam perekonomian nasional memang sudah tidak diragukan lagi. Pasalnya, UMKM memiliki kontribusi yang besar dalam perekonomian nasional dan penyerapan tenaga kerja...... <a href="https://finance.detik.com/berita-ekonomi-bisnis/d-7265122/transaksi-makin-mudah-dan-lancar-bri-ajak-umkm-manfaatkan-qris.">Baca Berita</a></p>
+        <h2>3. Transaksi Makin Mudah dan Lancar, BRI Ajak UMKM Manfaatkan QRIS</h2>
+        <p>Peran UMKM dalam perekonomian nasional memang sudah tidak diragukan lagi. Pasalnya, UMKM memiliki kontribusi yang besar dalam perekonomian nasional dan penyerapan tenaga kerja...... 
+            <a href="https://finance.detik.com/berita-ekonomi-bisnis/d-7265122/transaksi-makin-mudah-dan-lancar-bri-ajak-umkm-manfaatkan-qris" target="_blank">Baca Berita</a>
+        </p>
     </section>
+
     <footer>
-        <p>© 2024 Juan Pontoh. All rights reserved.</p>
+        <p>© 2025 Juan Pontoh. All rights reserved.</p>
     </footer>
 </body>
 </html>
